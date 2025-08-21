@@ -6,9 +6,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/rgb.h>
 
 #define BASE 0
 #define LOWER 1
@@ -28,158 +26,193 @@
     };
 
     macros {
-        CAD_MOVE: CAD_MOVE {
+        MACRO_CAD_M: CAD_MOVE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp M &kp SPACE>;
             label = "CAD_MOVE";
         };
 
-        CAD_ROTATE: CAD_ROTATE {
+        MACRO_CAD_RO: CAD_ROTATE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp R &kp O &kp SPACE>;
             label = "CAD_ROTATE";
         };
 
-        CAD_DIM: CAD_DIM {
+        MACRO_CAD_DIM: CAD_DIM {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp D &kp L &kp I &kp SPACE>;
             label = "CAD_DIM";
         };
 
-        CAD_DIMCON: CAD_DIMCONTINUE {
+        MACRO_CAD_DIMC: CAD_DIMCONTINUE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp D &kp C &kp O &kp SPACE>;
             label = "CAD_DIMCONTINUE";
         };
 
-        CAD_QLEDER: CAD_QLEDER {
+        MACRO_CAD_LEDER: CAD_QLEDER {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp L &kp E &kp SPACE>;
             label = "CAD_QLEDER";
         };
 
-        CAD_LAYISO: CAD_LAYISO {
+        MACRO_CAD_LISO: CAD_LAYISO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp L &kp A &kp Y &kp I &kp S &kp O &kp SPACE>;
             label = "CAD_LAYISO";
         };
 
-        CAD_LAYON: CAD_LAYON {
+        MACRO_CAD_LON: CAD_LAYON {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp L &kp A &kp Y &kp O &kp N &kp SPACE>;
             label = "CAD_LAYON";
         };
 
-        CAD_XLV: CAD_XLV {
+        MACRO_CAD_XL_V: CAD_XLV {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp X &kp L &kp SPACE &kp V &kp SPACE>;
             label = "CAD_XLV";
         };
 
-        CAD_XLH: CAD_XLH {
+        MACRO_CAD_XL_H: CAD_XLH {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp X &kp L &kp SPACE &kp H &kp SPACE>;
             label = "CAD_XLH";
         };
 
-        CAD_ALIGN: CAD_ALIGN {
+        MACRO_CAD_AGN: CAD_ALIGN {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp A &kp L &kp SPACE>;
             label = "CAD_ALIGN";
         };
 
-        CAD_TRIM: CAD_TRIM {
+        MACRO_CAD_TRIM: CAD_TRIM {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp T &kp R &kp SPACE>;
             label = "CAD_TRIM";
         };
 
-        CAD_MATCH: CAD_MATCH {
+        MACRO_CAD_MA: CAD_MATCH {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp M &kp A &kp SPACE>;
             label = "CAD_MATCH";
         };
 
-        CAD_LISP_ROTPC: CAD_LISP_ROTPC {
+        MACRO_CAD_ROTPC: CAD_LISP_ROTPC {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp R &kp O &kp T &kp P &kp C &kp SPACE>;
             label = "CAD_LISP_ROTPC";
         };
 
-        CAD_LISP_STBS: CAD_LISP_STBS {
+        MACRO_CAD_FIND: CAD_LISP_STBS {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp S &kp T &kp B &kp S &kp SPACE>;
             label = "CAD_LISP_STBS";
         };
 
-        CAD_LISP_TEXTALGINXY: CAD_LISP_TEXTALGINXY {
+        MACRO_CAD_TAXY: CAD_LISP_TEXTALGINXY {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp T &kp A &kp X &kp Y &kp SPACE>;
             label = "CAD_LISP_TEXTALGINXY";
         };
 
-        CAD_LISP_TEXTDIS50X: CAD_LISP_TEXTDIS50X {
+        MACRO_CAD_TD50X: CAD_LISP_TEXTDIS50X {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp T &kp D &kp NUMBER_5 &kp N0 &kp X &kp SPACE>;
+            bindings = <&kp T &kp D &kp NUMBER_5 &kp NUMBER_0 &kp X &kp SPACE>;
             label = "CAD_LISP_TEXTDIS50X";
         };
 
-        CAD_LISP_TEXTDIS50Y: CAD_LISP_TEXTDIS50Y {
+        MACRO_CAD_TD50Y: CAD_LISP_TEXTDIS50Y {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp T &kp D &kp NUMBER_5 &kp N0 &kp Y &kp SPACE>;
+            bindings = <&kp T &kp D &kp NUMBER_5 &kp NUMBER_0 &kp Y &kp SPACE>;
             label = "CAD_LISP_TEXTDIS50Y";
         };
 
-        CAD_COPY: CAD_COPY {
+        MACRO_CAD_COPY: CAD_COPY {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp C &kp O &kp SPACE>;
             label = "CAD_COPY";
         };
 
-        CAD_MIRRO: CAD_MIRRO {
+        MACRO_CAD_MIRRO: CAD_MIRRO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp M &kp I &kp SPACE>;
             label = "CAD_MIRRO";
         };
 
-        CAD_UNDO: CAD_UNDO {
+        MACRO_CAD_UNDO: CAD_UNDO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LCTRL &kp Z>;
             label = "CAD_UNDO";
         };
 
-        CAD_E_DELETE: CAD_E_DELETE {
+        MACRO_CAD_E: CAD_E_DELETE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp E &kp SPACE>;
             label = "CAD_E_DELETE";
         };
 
-        CAD_EX: CAD_EX {
+        MACRO_CAD_EX: CAD_EX {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp E &kp X &kp SPACE>;
             label = "CAD_EX";
+        };
+
+        MACRO_CAD_DSP: CAD_DIMSPA {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp D &kp I &kp M &kp S &kp P &kp SPACE>;
+            label = "CAD_DIMSPA";
+        };
+
+        MACRO_CTRL_1: MACRO_CTRL_1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sk LCTRL &kp N1>;
+            label = "MACRO_CTRL_1";
+        };
+
+        MACRO_CTRL_2: MACRO_CTRL_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sk LCTRL &kp N2>;
+            label = "MACRO_CTRL_2";
+        };
+
+        MACRO_CTRL_3: MACRO_CTRL_3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sk LCTRL &kp N3>;
+            label = "MACRO_CTRL_3";
+        };
+
+        MACRO_CTRL_7: MACRO_CTRL_7 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sk LCTRL &kp N7>;
+            label = "MACRO_CTRL_7";
         };
     };
 
@@ -197,15 +230,15 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp ESC       &kp N1  &kp N2    &kp N3    &kp N4          &kp N5                             &kp N6     &kp N7     &kp N8     &kp N9    &kp N0    &kp BACKSPACE
-&kp CAPSLOCK  &kp Q   &kp W     &kp E     &kp R           &kp T                              &kp Y      &kp U      &kp I      &kp O     &kp P     &kp CAPSLOCK
-&kp TAB       &kp A   &kp S     &kp D     &kp F           &kp G                              &kp H      &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
-&tog 1        &kp Z   &kp X     &kp C     &kp V           &kp B      &to 1        &to 2      &kp N      &kp M      &kp COMMA  &kp DOT   &kp FSLH  &tog 3
-                      &kp LGUI  &kp LALT  &kp LEFT_SHIFT  &kt LCTRL  &kp SPACE    &kp SPACE  &kp ENTER  &kp RCTRL  &kp RALT   &kp RGUI
+&kp ESC       &kp N1  &kp N2    &kp N3    &kp N4      &kp N5                             &kp N6     &kp N7     &kp N8     &kp N9    &kp N0    &kp BACKSPACE
+&kp CAPSLOCK  &kp Q   &kp W     &kp E     &kp R       &kp T                              &kp Y      &kp U      &kp I      &kp O     &kp P     &kp CAPSLOCK
+&kp TAB       &kp A   &kp S     &kp D     &kp F       &kp G                              &kp H      &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
+&mo 1         &kp Z   &kp X     &kp C     &kp V       &kp B      &to 1        &to 2      &kp N      &kp M      &kp COMMA  &kp DOT   &kp FSLH  &mo 3
+                      &kp LGUI  &kp LALT  &kp LSHIFT  &kp LCTRL  &kp SPACE    &kp SPACE  &kp ENTER  &kp RCTRL  &kp RALT   &kp RGUI
             >;
 
             sensor-bindings =
-                <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>,
+                <&inc_dec_kp RIGHT LEFT>,
                 <&inc_dec_kp PG_UP PG_DN>;
         };
 
@@ -221,16 +254,16 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&kp ESC       &CAD_MOVE             &CAD_ROTATE           &CAD_QLEDER      &CAD_DIMCON     &CAD_DIM                                       &kp KP_NUMLOCK  &kp SLASH  &kp ASTERISK  &kp MINUS        &kp LC(NUMBER_1)  &kp LC(NUMBER_2)
-&kp TAB       &CAD_LAYISO           &CAD_LAYON            &CAD_XLV         &CAD_XLH        &CAD_TRIM                                      &kp N7          &kp N8     &kp N9        &kp PLUS         &kp LC(NUMBER_3)  &kp LC(NUMBER_7)
-&kp CAPSLOCK  &CAD_EX               &CAD_MATCH            &CAD_LISP_ROTPC  &CAD_LISP_STBS  &CAD_LISP_TEXTALGINXY                          &kp NUMBER_4    &kp N5     &kp N6        &kp DOT          &kp F2            &kp PIPE
-&tog 0        &CAD_LISP_TEXTDIS50X  &CAD_LISP_TEXTDIS50Y  &CAD_E_DELETE    &CAD_COPY       &CAD_MIRRO             &to 2        &to 0      &kp N1          &kp N2     &kp N3        &kp COMMA        &kp BSLH          &tog 3
-                                    &CAD_UNDO             &kp LEFT_ALT     &kp LCTRL       &kp LEFT_SHIFT         &kp SPACE    &kp SPACE  &kp ENTER       &kp N0     &kp RCTRL     &kp RIGHT_SHIFT
+&kp ESC       &MACRO_CAD_M      &MACRO_CAD_RO     &MACRO_CAD_LEDER  &MACRO_CAD_DIMC  &MACRO_CAD_DIM                            &kp KP_NUMLOCK  &kp SLASH  &kp ASTERISK  &kp MINUS        &MACRO_CTRL_1  &MACRO_CTRL_2
+&kp TAB       &MACRO_CAD_LISO   &MACRO_CAD_LON    &MACRO_CAD_XL_V   &MACRO_CAD_XL_H  &MACRO_CAD_TRIM                           &kp N7          &kp N8     &kp N9        &kp PLUS         &MACRO_CTRL_3  &MACRO_CTRL_7
+&kp CAPSLOCK  &MACRO_CAD_EX     &MACRO_CAD_MA     &MACRO_CAD_ROTPC  &MACRO_CAD_FIND  &MACRO_CAD_TAXY                           &kp N4          &kp N5     &kp N6        &kp DOT          &kp F2         &kp PIPE
+&mo 0         &MACRO_CAD_TD50X  &MACRO_CAD_TD50Y  &MACRO_CAD_E      &MACRO_CAD_COPY  &MACRO_CAD_MIRRO  &to 2        &to 0      &kp N1          &kp N2     &kp N3        &kp COMMA        &kp BSLH       &mo 3
+                                &MACRO_CAD_DSP    &kp LEFT_ALT      &kp LCTRL        &kp LEFT_SHIFT    &kp SPACE    &kp SPACE  &kp ENTER       &kp N0     &kp RCTRL     &kp RIGHT_SHIFT
             >;
 
             sensor-bindings =
                 <&inc_dec_kp LC(Y) LC(Z)>,
-                <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
+                <&inc_dec_kp RIGHT LEFT>;
         };
 
         raise_layer {
@@ -245,13 +278,11 @@
 
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans     &trans    &trans    &trans     &trans   &trans
-&trans      &kp INS       &kp PSCRN     &kp K_CMENU   &trans        &trans                          &kp PG_UP  &trans    &kp UP    &trans     &kp N0   &trans
-&trans      &kp LALT      &kp LCTRL     &kp LSHFT     &trans        &kp CLCK                        &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL  &kp BSPC
-&trans      &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans        &to 3     &to 0   &trans     &trans    &trans    &trans     &trans   &trans
+&trans      &kp INS       &kp L         &kp U         &trans        &trans                          &kp PG_UP  &trans    &kp UP    &trans     &kp N0   &trans
+&trans      &kp LALT      &kp LCTRL     &kp LSHIFT    &trans        &kp R                           &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL  &kp BSPC
+&trans      &kp A         &kp B         &kp C         &kp D         &trans        &to 3     &to 0   &trans     &trans    &trans    &trans     &trans   &trans
                           &trans        &trans        &trans        &trans        &trans    &trans  &trans     &trans    &trans    &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         adjust_layer {
@@ -264,11 +295,11 @@
 
             label = "adjust";
             bindings = <
-&kp F1             &kp F2           &kp F3           &kp F4           &kp F5           &kp F6                           &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&ext_power EP_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF                  &none   &none   &none   &none    &none    &none
-&none              &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none            &none            &none                            &none   &none   &none   &none    &none    &none
-&none              &none            &none            &none            &none            &none            &to 0    &none  &none   &none   &none   &none    &none    &none
-                                    &none            &none            &none            &none            &none    &none  &none   &none   &none   &none
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                    &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &to 0     &trans  &trans  &trans  &trans  &trans   &trans   &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
