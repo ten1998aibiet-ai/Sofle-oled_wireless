@@ -66,7 +66,7 @@ layers:
   - '&CAD_MOVE'
   - '&CAD_ROTATE'
   - '&CAD_QLEDER'
-  - '&CAD_DIMCONTINUE'
+  - '&CAD_DIMCON'
   - '&CAD_DIM'
   - KP NUMLOCK
   - /
@@ -87,7 +87,7 @@ layers:
   - Ctl+3
   - Ctl+7
   - CAPSLOCK
-  - '&CAD_EXTEND'
+  - '&CAD_EX'
   - '&CAD_MATCH'
   - '&CAD_LISP_ROTPC'
   - '&CAD_LISP_STBS'
@@ -101,7 +101,7 @@ layers:
   - {t: default, h: toggle}
   - '&CAD_LISP_TEXTDIS50X'
   - '&CAD_LISP_TEXTDIS50Y'
-  - '&CAD_DELETE'
+  - '&CAD_E_DELETE'
   - '&CAD_COPY'
   - '&CAD_MIRRO'
   - {t: raise, h: toggle}
