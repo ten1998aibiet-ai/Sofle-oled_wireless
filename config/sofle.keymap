@@ -49,18 +49,11 @@
             label = "CAD_DIM";
         };
 
-        CAD_DIMCONTINUE: CAD_DIMCONTINUE {
+        CAD_DIMCON: CAD_DIMCONTINUE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp D &kp C &kp O &kp SPACE>;
             label = "CAD_DIMCONTINUE";
-        };
-
-        CAD_DELETE: new_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp E &kp SPACE>;
-            label = "NEW_MACRO";
         };
 
         CAD_QLEDER: CAD_QLEDER {
@@ -110,13 +103,6 @@
             #binding-cells = <0>;
             bindings = <&kp T &kp R &kp SPACE>;
             label = "CAD_TRIM";
-        };
-
-        CAD_EXTEND: new_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp E &kp X &kp SPACE>;
-            label = "NEW_MACRO";
         };
 
         CAD_MATCH: CAD_MATCH {
@@ -181,6 +167,20 @@
             bindings = <&kp LCTRL &kp Z>;
             label = "CAD_UNDO";
         };
+
+        CAD_E_DELETE: CAD_E_DELETE {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp E &kp SPACE>;
+            label = "CAD_E_DELETE";
+        };
+
+        CAD_EX: CAD_EX {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp E &kp X &kp SPACE>;
+            label = "CAD_EX";
+        };
     };
 
     keymap {
@@ -221,11 +221,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&kp ESC       &CAD_MOVE             &CAD_ROTATE           &CAD_QLEDER      &CAD_DIMCONTINUE  &CAD_DIM                                       &kp KP_NUMLOCK  &kp SLASH  &kp ASTERISK  &kp MINUS        &kp LC(NUMBER_1)  &kp LC(NUMBER_2)
-&kp TAB       &CAD_LAYISO           &CAD_LAYON            &CAD_XLV         &CAD_XLH          &CAD_TRIM                                      &kp N7          &kp N8     &kp N9        &kp PLUS         &kp LC(NUMBER_3)  &kp LC(NUMBER_7)
-&kp CAPSLOCK  &CAD_EXTEND           &CAD_MATCH            &CAD_LISP_ROTPC  &CAD_LISP_STBS    &CAD_LISP_TEXTALGINXY                          &kp NUMBER_4    &kp N5     &kp N6        &kp DOT          &kp F2            &kp PIPE
-&tog 0        &CAD_LISP_TEXTDIS50X  &CAD_LISP_TEXTDIS50Y  &CAD_DELETE      &CAD_COPY         &CAD_MIRRO             &to 2        &to 0      &kp N1          &kp N2     &kp N3        &kp COMMA        &kp BSLH          &tog 3
-                                    &CAD_UNDO             &kp LEFT_ALT     &kp LCTRL         &kp LEFT_SHIFT         &kp SPACE    &kp SPACE  &kp ENTER       &kp N0     &kp RCTRL     &kp RIGHT_SHIFT
+&kp ESC       &CAD_MOVE             &CAD_ROTATE           &CAD_QLEDER      &CAD_DIMCON     &CAD_DIM                                       &kp KP_NUMLOCK  &kp SLASH  &kp ASTERISK  &kp MINUS        &kp LC(NUMBER_1)  &kp LC(NUMBER_2)
+&kp TAB       &CAD_LAYISO           &CAD_LAYON            &CAD_XLV         &CAD_XLH        &CAD_TRIM                                      &kp N7          &kp N8     &kp N9        &kp PLUS         &kp LC(NUMBER_3)  &kp LC(NUMBER_7)
+&kp CAPSLOCK  &CAD_EX               &CAD_MATCH            &CAD_LISP_ROTPC  &CAD_LISP_STBS  &CAD_LISP_TEXTALGINXY                          &kp NUMBER_4    &kp N5     &kp N6        &kp DOT          &kp F2            &kp PIPE
+&tog 0        &CAD_LISP_TEXTDIS50X  &CAD_LISP_TEXTDIS50Y  &CAD_E_DELETE    &CAD_COPY       &CAD_MIRRO             &to 2        &to 0      &kp N1          &kp N2     &kp N3        &kp COMMA        &kp BSLH          &tog 3
+                                    &CAD_UNDO             &kp LEFT_ALT     &kp LCTRL       &kp LEFT_SHIFT         &kp SPACE    &kp SPACE  &kp ENTER       &kp N0     &kp RCTRL     &kp RIGHT_SHIFT
             >;
 
             sensor-bindings =
