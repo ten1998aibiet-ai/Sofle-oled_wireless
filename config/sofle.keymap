@@ -213,6 +213,27 @@
             bindings = <&sk LCTRL &kp N7>;
             label = "MACRO_CTRL_7";
         };
+
+        macro_layer0: macro_layer {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 1>;
+            label = "MACRO_LAYER";
+        };
+
+        macro_layer1: macro_layer2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 1>;
+            label = "MACRO_LAYER2";
+        };
+
+        macro_layer2: macro_layer3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 2>;
+            label = "MACRO_LAYER3";
+        };
     };
 
     keymap {
@@ -236,9 +257,7 @@
                       &kp LGUI  &kp LALT  &kp LSHIFT  &kp LCTRL  &kp SPACE    &kp SPACE  &kp ENTER  &kp RCTRL  &kp RALT   &kp RGUI
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp LEFT RIGHT>,
-                <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp LEFT RIGHT>, <&inc_dec_kp UP DOWN>;
         };
 
         MACRO_LAYER {
