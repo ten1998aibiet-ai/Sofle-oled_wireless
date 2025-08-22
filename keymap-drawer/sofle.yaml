@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: sofle}
 layers:
-  default:
+  KEY:
   - ESC
   - '1'
   - '2'
@@ -37,20 +37,20 @@ layers:
   - L
   - ;
   - ''''
-  - lower
+  - CAD
   - Z
   - X
   - C
   - V
   - B
-  - {t: lower, h: toggle}
-  - {t: raise, h: toggle}
+  - {t: CAD, h: toggle}
+  - {t: Fkey, h: toggle}
   - N
   - M
   - ','
   - .
   - /
-  - adjust
+  - Fkey
   - LGUI
   - LALT
   - LSHIFT
@@ -61,7 +61,7 @@ layers:
   - RCTRL
   - RALT
   - RGUI
-  lower:
+  CAD:
   - ESC
   - '&MACRO_CAD_M'
   - '&MACRO_CAD_RO'
@@ -98,20 +98,20 @@ layers:
   - .
   - F2
   - '|'
-  - {t: default, type: held}
+  - {t: KEY, type: held}
   - '&MACRO_CAD_TD50X'
   - '&MACRO_CAD_TD50Y'
   - '&MACRO_CAD_E'
   - '&MACRO_CAD_COPY'
   - '&MACRO_CAD_MIRRO'
-  - {t: raise, h: toggle}
-  - {t: default, h: toggle}
+  - {t: KEY, h: toggle}
+  - {t: Fkey, h: toggle}
   - '1'
   - '2'
   - '3'
   - ','
   - \
-  - adjust
+  - Fkey
   - '&MACRO_CAD_DSP'
   - LEFT ALT
   - LCTRL
@@ -122,68 +122,7 @@ layers:
   - '0'
   - RCTRL
   - RIGHT SHIFT
-  raise:
-  - BT CLR
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - INS
-  - L
-  - U
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - PG UP
-  - {t: ▽, type: trans}
-  - UP
-  - {t: ▽, type: trans}
-  - '0'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LALT
-  - LCTRL
-  - LSHIFT
-  - {t: ▽, type: trans}
-  - R
-  - PG DN
-  - LEFT
-  - DOWN
-  - RIGHT
-  - DEL
-  - BSPC
-  - {t: ▽, type: trans}
-  - A
-  - B
-  - C
-  - D
-  - {t: ▽, type: trans}
-  - {t: adjust, h: toggle}
-  - {t: default, h: toggle}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  adjust:
+  Fkey:
   - F1
   - F2
   - F3
@@ -226,8 +165,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: default, h: toggle}
-  - {t: lower, h: toggle}
+  - {t: KEY, h: toggle}
+  - {t: CAD, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
