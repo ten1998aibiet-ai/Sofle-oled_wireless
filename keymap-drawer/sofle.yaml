@@ -37,7 +37,7 @@ layers:
   - L
   - ;
   - ''''
-  - {t: lower, h: toggle}
+  - lower
   - Z
   - X
   - C
@@ -50,11 +50,11 @@ layers:
   - ','
   - .
   - /
-  - {t: adjust, h: toggle}
+  - adjust
   - LGUI
   - LALT
-  - LEFT SHIFT
-  - {t: LCTRL, h: toggle}
+  - LSHIFT
+  - LCTRL
   - SPACE
   - SPACE
   - ENTER
@@ -63,47 +63,47 @@ layers:
   - RGUI
   lower:
   - ESC
-  - '&CAD_MOVE'
-  - '&CAD_ROTATE'
-  - '&CAD_QLEDER'
-  - '&CAD_DIMCON'
-  - '&CAD_DIM'
+  - '&MACRO_CAD_M'
+  - '&MACRO_CAD_RO'
+  - '&MACRO_CAD_LEDER'
+  - '&MACRO_CAD_DIMC'
+  - '&MACRO_CAD_DIM'
   - KP NUMLOCK
   - /
   - '*'
   - '-'
-  - Ctl+1
-  - Ctl+2
+  - '&MACRO_CTRL_1'
+  - '&MACRO_CTRL_2'
   - TAB
-  - '&CAD_LAYISO'
-  - '&CAD_LAYON'
-  - '&CAD_XLV'
-  - '&CAD_XLH'
-  - '&CAD_TRIM'
+  - '&MACRO_CAD_LISO'
+  - '&MACRO_CAD_LON'
+  - '&MACRO_CAD_XL_V'
+  - '&MACRO_CAD_XL_H'
+  - '&MACRO_CAD_TRIM'
   - '7'
   - '8'
   - '9'
   - +
-  - Ctl+3
-  - Ctl+7
+  - '&MACRO_CTRL_3'
+  - '&MACRO_CTRL_7'
   - CAPSLOCK
-  - '&CAD_EX'
-  - '&CAD_MATCH'
-  - '&CAD_LISP_ROTPC'
-  - '&CAD_LISP_STBS'
-  - '&CAD_LISP_TEXTALGINXY'
+  - '&MACRO_CAD_EX'
+  - '&MACRO_CAD_MA'
+  - '&MACRO_CAD_ROTPC'
+  - '&MACRO_CAD_FIND'
+  - '&MACRO_CAD_TAXY'
   - '4'
   - '5'
   - '6'
   - .
   - F2
   - '|'
-  - {t: default, h: toggle}
-  - '&CAD_LISP_TEXTDIS50X'
-  - '&CAD_LISP_TEXTDIS50Y'
-  - '&CAD_E_DELETE'
-  - '&CAD_COPY'
-  - '&CAD_MIRRO'
+  - {t: default, type: held}
+  - '&MACRO_CAD_TD50X'
+  - '&MACRO_CAD_TD50Y'
+  - '&MACRO_CAD_E'
+  - '&MACRO_CAD_COPY'
+  - '&MACRO_CAD_MIRRO'
   - {t: raise, h: toggle}
   - {t: default, h: toggle}
   - '1'
@@ -111,8 +111,8 @@ layers:
   - '3'
   - ','
   - \
-  - {t: adjust, h: toggle}
-  - '&CAD_UNDO'
+  - adjust
+  - '&MACRO_CAD_DSP'
   - LEFT ALT
   - LCTRL
   - LEFT SHIFT
@@ -137,8 +137,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - INS
-  - PSCRN
-  - CMENU
+  - L
+  - U
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PG UP
@@ -150,9 +150,9 @@ layers:
   - {t: ▽, type: trans}
   - LALT
   - LCTRL
-  - LSHFT
+  - LSHIFT
   - {t: ▽, type: trans}
-  - CLCK
+  - R
   - PG DN
   - LEFT
   - DOWN
@@ -160,10 +160,10 @@ layers:
   - DEL
   - BSPC
   - {t: ▽, type: trans}
-  - UNDO
-  - CUT
-  - COPY
-  - PASTE
+  - A
+  - B
+  - C
+  - D
   - {t: ▽, type: trans}
   - {t: adjust, h: toggle}
   - {t: default, h: toggle}
@@ -196,51 +196,51 @@ layers:
   - F10
   - F11
   - F12
-  - EP TOG
-  - RGB HUD
-  - RGB HUI
-  - RGB SAD
-  - RGB SAI
-  - RGB EFF
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - RGB BRD
-  - RGB BRI
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - A
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: default, h: toggle}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: lower, h: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
