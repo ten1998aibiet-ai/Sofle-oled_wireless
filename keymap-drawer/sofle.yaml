@@ -13,7 +13,7 @@ layers:
   - '9'
   - '0'
   - BACKSPACE
-  - CAPSLOCK
+  - TAB
   - Q
   - W
   - E
@@ -25,7 +25,7 @@ layers:
   - O
   - P
   - CAPSLOCK
-  - TAB
+  - CAD
   - A
   - S
   - D
@@ -37,7 +37,7 @@ layers:
   - L
   - ;
   - ''''
-  - CAD
+  - ENTER
   - Z
   - X
   - C
@@ -86,7 +86,7 @@ layers:
   - +
   - '&MACRO_CTRL_3'
   - '&MACRO_CTRL_7'
-  - CAPSLOCK
+  - {t: CAPSLOCK, type: held}
   - '&MACRO_CAD_EX'
   - '&MACRO_CAD_MA'
   - '&MACRO_CAD_ROTPC'
@@ -98,7 +98,7 @@ layers:
   - .
   - F2
   - '|'
-  - {t: KEY, type: held}
+  - KEY
   - '&MACRO_CAD_TD50X'
   - '&MACRO_CAD_TD50Y'
   - '&MACRO_CAD_E'
