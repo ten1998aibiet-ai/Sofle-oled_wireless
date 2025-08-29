@@ -25,7 +25,7 @@ layers:
   - O
   - P
   - CAPSLOCK
-  - CAD
+  - CAPS
   - A
   - S
   - D
@@ -37,20 +37,20 @@ layers:
   - L
   - ;
   - ''''
-  - ENTER
+  - {t: CAD, h: toggle}
   - Z
   - X
   - C
   - V
   - B
-  - {t: CAD, h: toggle}
-  - {t: Fkey, h: toggle}
+  - {t: KEY, h: toggle}
+  - {t: KEY, h: toggle}
   - N
   - M
   - ','
   - .
   - /
-  - Fkey
+  - {t: Fkey, h: toggle}
   - LGUI
   - LALT
   - LSHIFT
@@ -86,7 +86,7 @@ layers:
   - +
   - '&MACRO_CTRL_3'
   - '&MACRO_CTRL_7'
-  - {t: CAPSLOCK, type: held}
+  - CAPSLOCK
   - '&MACRO_CAD_EX'
   - '&MACRO_CAD_MA'
   - '&MACRO_CAD_ROTPC'
@@ -135,6 +135,7 @@ layers:
   - F10
   - F11
   - F12
+  - TAB
   - A
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -146,8 +147,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - CAPSLOCK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
