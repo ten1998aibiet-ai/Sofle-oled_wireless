@@ -272,11 +272,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&kp ESC       &MACRO_CAD_M      &MACRO_CAD_RO     &MACRO_CAD_LEDER  &MACRO_CAD_DIMC  &MACRO_CAD_DIM                            &kp KP_NUMLOCK  &kp SLASH  &kp ASTERISK  &kp MINUS        &MACRO_CTRL_1  &MACRO_CTRL_2
+&kp LEFT_ALT  &MACRO_CAD_M      &MACRO_CAD_RO     &MACRO_CAD_LEDER  &MACRO_CAD_DIMC  &MACRO_CAD_DIM                            &kp KP_NUMLOCK  &kp SLASH  &kp ASTERISK  &kp MINUS        &MACRO_CTRL_1  &MACRO_CTRL_2
 &kp TAB       &MACRO_CAD_LISO   &MACRO_CAD_LON    &MACRO_CAD_XL_V   &MACRO_CAD_XL_H  &MACRO_CAD_TRIM                           &kp N7          &kp N8     &kp N9        &kp PLUS         &MACRO_CTRL_3  &MACRO_CTRL_7
 &kp CAPSLOCK  &MACRO_CAD_EX     &MACRO_CAD_MA     &MACRO_CAD_ROTPC  &MACRO_CAD_FIND  &MACRO_CAD_TAXY                           &kp N4          &kp N5     &kp N6        &kp DOT          &kp F2         &kp PIPE
 &mo 0         &MACRO_CAD_TD50X  &MACRO_CAD_TD50Y  &MACRO_CAD_E      &MACRO_CAD_COPY  &MACRO_CAD_MIRRO  &to 0        &to 2      &kp N1          &kp N2     &kp N3        &kp COMMA        &kp BSLH       &mo 2
-                                &MACRO_CAD_DSP    &kp LEFT_ALT      &kp LCTRL        &kp LEFT_SHIFT    &kp SPACE    &kp SPACE  &kp ENTER       &kp N0     &kp RCTRL     &kp RIGHT_SHIFT
+                                &MACRO_CAD_DSP    &kp LCTRL         &kp LEFT_SHIFT   &kp ESC           &kp SPACE    &kp SPACE  &kp ENTER       &kp N0     &kp RCTRL     &kp RIGHT_SHIFT
             >;
 
             sensor-bindings =
