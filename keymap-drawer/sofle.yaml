@@ -62,7 +62,7 @@ layers:
   - RALT
   - RGUI
   CAD:
-  - ESC
+  - LEFT ALT
   - '&MACRO_CAD_M'
   - '&MACRO_CAD_RO'
   - '&MACRO_CAD_LEDER'
@@ -113,9 +113,9 @@ layers:
   - \
   - Fkey
   - '&MACRO_CAD_DSP'
-  - LEFT ALT
   - LCTRL
   - LEFT SHIFT
+  - ESC
   - SPACE
   - SPACE
   - ENTER
