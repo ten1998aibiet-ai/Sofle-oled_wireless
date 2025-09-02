@@ -44,7 +44,7 @@ layers:
   - V
   - B
   - {t: KEY, h: toggle}
-  - {t: KEY, h: toggle}
+  - {t: Fkey, h: toggle}
   - N
   - M
   - ','
@@ -86,7 +86,7 @@ layers:
   - +
   - '&MACRO_CTRL_3'
   - '&MACRO_CTRL_7'
-  - CAPSLOCK
+  - {t: KEY, h: toggle}
   - '&MACRO_CAD_EX'
   - '&MACRO_CAD_MA'
   - '&MACRO_CAD_ROTPC'
@@ -97,8 +97,8 @@ layers:
   - '6'
   - .
   - F2
-  - '|'
-  - KEY
+  - _
+  - {t: Fkey, h: toggle}
   - '&MACRO_CAD_TD50X'
   - '&MACRO_CAD_TD50Y'
   - '&MACRO_CAD_E'
