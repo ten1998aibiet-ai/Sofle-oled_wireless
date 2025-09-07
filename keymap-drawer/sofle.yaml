@@ -62,12 +62,12 @@ layers:
   - RALT
   - RGUI
   CAD:
-  - LEFT ALT
-  - '&MACRO_CAD_M'
-  - '&MACRO_CAD_RO'
-  - '&MACRO_CAD_LEDER'
-  - '&MACRO_CAD_DIMC'
-  - '&MACRO_CAD_DIM'
+  - ESC
+  - '&MACRO_CAD_UNDO'
+  - '&MACRO_CAD_EX'
+  - '&MACRO_CAD_FIND'
+  - '&MACRO_CAD_TAXY'
+  - '&MACRO_CAD_MIRRO'
   - KP NUMLOCK
   - /
   - '*'
@@ -75,10 +75,10 @@ layers:
   - '&MACRO_CTRL_1'
   - '&MACRO_CTRL_2'
   - TAB
-  - '&MACRO_CAD_LISO'
-  - '&MACRO_CAD_LON'
-  - '&MACRO_CAD_XL_V'
-  - '&MACRO_CAD_XL_H'
+  - '&MACRO_CAD_TD50Y'
+  - '&MACRO_CAD_TD50X'
+  - '&MACRO_CAD_E'
+  - '&MACRO_CAD_ROTPC'
   - '&MACRO_CAD_TRIM'
   - '7'
   - '8'
@@ -86,12 +86,12 @@ layers:
   - +
   - '&MACRO_CTRL_3'
   - '&MACRO_CTRL_7'
-  - {t: KEY, h: toggle}
-  - '&MACRO_CAD_EX'
+  - CAPS
+  - '&MACRO_CAD_AGN'
   - '&MACRO_CAD_MA'
-  - '&MACRO_CAD_ROTPC'
-  - '&MACRO_CAD_FIND'
-  - '&MACRO_CAD_TAXY'
+  - '&MACRO_CAD_LEDER'
+  - '&MACRO_CAD_DIMC'
+  - '&MACRO_CAD_DIM'
   - '4'
   - '5'
   - '6'
@@ -99,11 +99,11 @@ layers:
   - F2
   - _
   - {t: Fkey, h: toggle}
-  - '&MACRO_CAD_TD50X'
-  - '&MACRO_CAD_TD50Y'
-  - '&MACRO_CAD_E'
+  - '&MACRO_CAD_LISO'
+  - '&MACRO_CAD_LON'
   - '&MACRO_CAD_COPY'
-  - '&MACRO_CAD_MIRRO'
+  - '&MACRO_CAD_RO'
+  - '&MACRO_CAD_M'
   - {t: KEY, h: toggle}
   - {t: Fkey, h: toggle}
   - '1'
@@ -114,9 +114,9 @@ layers:
   - Fkey
   - '&MACRO_CAD_DSP'
   - LCTRL
-  - LEFT SHIFT
+  - LCTRL
+  - LSHIFT
   - ESC
-  - SPACE
   - SPACE
   - ENTER
   - '0'
