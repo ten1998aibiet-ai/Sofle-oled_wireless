@@ -49,7 +49,7 @@ layers:
   - M
   - ','
   - .
-  - /
+  - '-'
   - {t: Fkey, h: toggle}
   - LGUI
   - LALT
@@ -58,13 +58,13 @@ layers:
   - SPACE
   - SPACE
   - ENTER
-  - RCTRL
+  - RIGHT SHIFT
   - RALT
   - RGUI
   CAD:
   - ESC
-  - '&MACRO_CAD_UNDO'
-  - '&MACRO_CAD_EX'
+  - '&MACRO_CAD_TAXY'
+  - '&MACRO_CAD_ROTPC'
   - '&MACRO_CAD_FIND'
   - '&MACRO_CAD_TAXY'
   - '&MACRO_CAD_MIRRO'
@@ -75,10 +75,10 @@ layers:
   - '&MACRO_CTRL_1'
   - '&MACRO_CTRL_2'
   - TAB
-  - '&MACRO_CAD_TD50Y'
-  - '&MACRO_CAD_TD50X'
+  - '&MACRO_CAD_XL_V'
+  - '&MACRO_CAD_XL_H'
   - '&MACRO_CAD_E'
-  - '&MACRO_CAD_ROTPC'
+  - '&MACRO_CAD_EX'
   - '&MACRO_CAD_TRIM'
   - '7'
   - '8'
@@ -113,7 +113,7 @@ layers:
   - \
   - Fkey
   - '&MACRO_CAD_DSP'
-  - LCTRL
+  - SPACE
   - LCTRL
   - LSHIFT
   - ESC
