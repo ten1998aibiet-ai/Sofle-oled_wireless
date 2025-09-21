@@ -214,25 +214,151 @@
             label = "MACRO_CTRL_7";
         };
 
-        macro_layer0: macro_layer {
+        macro_line: macro_line {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 1>;
-            label = "MACRO_LAYER";
+            bindings = <&kp L &kp SPACE>;
+            label = "MACRO_LINE";
         };
 
-        macro_layer1: macro_layer2 {
+        macro_delsub: macro_delsub {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 1>;
-            label = "MACRO_LAYER2";
+            bindings = <&kp LEFT_ALT &kp E &kp D &kp S>;
+            label = "MACRO_DELSUB";
         };
 
-        macro_layer2: macro_layer3 {
+        macro_delgeo: macro_delgeo {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 2>;
-            label = "MACRO_LAYER3";
+            bindings = <&kp LEFT_ALT &kp E &kp D &kp G>;
+            label = "MACRO_DELGEO";
+        };
+
+        macro_lineam: macro_lineam {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp I &kp L>;
+            label = "MACRO_LINEAM";
+        };
+
+        macro_cricle: macro_cricle {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp I &kp A>;
+            label = "MACRO_CRICLE";
+        };
+
+        macro_textnew: macro_textnew {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp I &kp T>;
+            label = "MACRO_TEXTNEW";
+        };
+
+        macro_symbol: macro_symbol {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp I &kp Y>;
+            label = "MACRO_SYMBOL";
+        };
+
+        macro_slide: macro_slide {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp T &kp I &kp S &kp SPACE>;
+            label = "MACRO_SLIDE";
+        };
+
+        macro_dimline2: macro_dimline2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp D &kp L>;
+            label = "MACRO_DIMLINE2";
+        };
+
+        macro_arrowam: macro_arrowam {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp A &kp N>;
+            label = "MACRO_ARROWAM";
+        };
+
+        macro_textmove: macro_textmove {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp M &kp M &kp I>;
+            label = "MACRO_TEXTMOVE";
+        };
+
+        macro_symbolmove: macro_symbolmove {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp M &kp M &kp Y>;
+            label = "MACRO_SYMBOLMOVE";
+        };
+
+        macro_arrowmove: macro_arrowmove {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp M &kp M &kp R>;
+            label = "MACRO_ARROWMOVE";
+        };
+
+        macro_aggle: macro_aggle {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp D &kp A>;
+            label = "MACRO_AGGLE";
+        };
+
+        macro_textcopy: macro_textcopy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp M &kp C &kp T>;
+            label = "MACRO_TEXTCOPY";
+        };
+
+        macro_symbolcopy: macro_symbolcopy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp M &kp C &kp Y>;
+            label = "MACRO_SYMBOLCOPY";
+        };
+
+        macro_geocopy: macro_geocopy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp M &kp C &kp G>;
+            label = "MACRO_GEOCOPY";
+        };
+
+        macro_subcopy: macro_subcopy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp M &kp C &kp U>;
+            label = "MACRO_SUBCOPY";
+        };
+
+        macro_movedim: macro_movedim {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp M &kp D>;
+            label = "MACRO_MOVEDIM";
+        };
+
+        macro_modicolor: macro_modicolor {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp M &kp O>;
+            label = "MACRO_MODICOLOR";
+        };
+
+        macro_linetype: macro_linetype {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp M &kp I>;
+            label = "MACRO_LINETYPE";
         };
     };
 
@@ -272,11 +398,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&kp ESC   &MACRO_CAD_TAXY  &MACRO_CAD_ROTPC  &MACRO_CAD_FIND   &MACRO_CAD_TAXY  &MACRO_CAD_MIRRO                        &kp KP_NUMLOCK  &kp SLASH     &kp ASTERISK  &kp MINUS        &MACRO_CTRL_1  &MACRO_CTRL_2
-&kp TAB   &MACRO_CAD_XL_V  &MACRO_CAD_XL_H   &MACRO_CAD_E      &MACRO_CAD_EX    &MACRO_CAD_TRIM                         &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9  &kp PLUS         &MACRO_CTRL_3  &MACRO_CTRL_7
-&kp CAPS  &MACRO_CAD_AGN   &MACRO_CAD_MA     &MACRO_CAD_LEDER  &MACRO_CAD_DIMC  &MACRO_CAD_DIM                          &kp NUMBER_4    &kp NUMBER_5  &kp NUMBER_6  &kp DOT          &kp F2         &kp UNDER
-&to 2     &MACRO_CAD_LISO  &MACRO_CAD_LON    &MACRO_CAD_COPY   &MACRO_CAD_RO    &MACRO_CAD_M      &to 0      &to 2      &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp COMMA        &kp BSLH       &mo 2
-                           &MACRO_CAD_DSP    &kp SPACE         &kp LCTRL        &kp LSHIFT        &kp ESC    &kp SPACE  &kp ENTER       &kp NUMBER_0  &kp RCTRL     &kp RIGHT_SHIFT
+&kp TAB       &MACRO_CAD_TAXY  &MACRO_CAD_ROTPC  &MACRO_CAD_FIND   &macro_line      &MACRO_CAD_MIRRO                        &kp KP_NUMLOCK  &kp SLASH     &kp ASTERISK  &kp MINUS        &MACRO_CTRL_1  &MACRO_CTRL_2
+&kp CAPSLOCK  &MACRO_CAD_XL_V  &MACRO_CAD_XL_H   &MACRO_CAD_E      &MACRO_CAD_EX    &MACRO_CAD_TRIM                         &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9  &kp PLUS         &MACRO_CTRL_3  &MACRO_CTRL_7
+&to 2         &MACRO_CAD_AGN   &MACRO_CAD_MA     &MACRO_CAD_LEDER  &MACRO_CAD_DIMC  &MACRO_CAD_DIM                          &kp NUMBER_4    &kp NUMBER_5  &kp NUMBER_6  &kp DOT          &kp F2         &kp UNDER
+&to 0         &MACRO_CAD_LISO  &MACRO_CAD_LON    &MACRO_CAD_COPY   &MACRO_CAD_RO    &MACRO_CAD_M      &to 0      &to 2      &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp COMMA        &kp BSLH       &mo 2
+                               &MACRO_CAD_DSP    &kp LCTRL         &kp SPACE        &kp LSHIFT        &kp ESC    &kp SPACE  &kp ENTER       &kp NUMBER_0  &kp RCTRL     &kp RIGHT_SHIFT
             >;
 
             sensor-bindings =
@@ -294,11 +420,11 @@
 
             label = "Fkey";
             bindings = <
-&kp F1        &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                    &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&kp TAB       &kp A   &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans   &trans   &trans
-&kp CAPSLOCK  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans   &trans   &trans
-&trans        &trans  &trans  &trans  &trans  &trans  &to 0     &to 1   &trans  &trans  &trans  &trans   &trans   &trans
-                      &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&kp ESC       &kp F4          &kp F5          &macro_arrowmove  &macro_symbolmove  &macro_textmove                            &kp KP_NUMLOCK   &kp SLASH        &kp ASTERISK     &kp MINUS        &macro_modicolor   &macro_linetype
+&kp TAB       &macro_geocopy  &macro_subcopy  &macro_arrowmove  &macro_symbolcopy  &macro_textcopy                            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS         &kp SEMICOLON      &kp SQT
+&kp CAPSLOCK  &macro_delgeo   &macro_delsub   &macro_arrowam    &macro_symbol      &macro_textnew                             &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp EXCLAMATION  &kp SLASH          &kp LEFT_BRACKET
+&to 0         &kp A           &macro_movedim  &macro_aggle      &macro_dimline2    &kp ENTER        &to 0      &to 1          &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp AT_SIGN      &kp RIGHT_BRACKET  &kp NON_US_BACKSLASH
+                              &macro_slide    &kp LCTRL         &kp SPACE          &kp LEFT_SHIFT   &kp ESC    &kp BACKSPACE  &kp ENTER        &kp KP_NUMBER_0  &kp DOT          &kp COMMA
             >;
         };
     };
