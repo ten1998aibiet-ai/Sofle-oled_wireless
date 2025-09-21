@@ -86,7 +86,7 @@ layers:
   - +
   - '&MACRO_CTRL_3'
   - '&MACRO_CTRL_7'
-  - {t: Fkey, h: toggle}
+  - {t: KEY, h: toggle}
   - '&MACRO_CAD_AGN'
   - '&MACRO_CAD_MA'
   - '&MACRO_CAD_LEDER'
@@ -98,7 +98,7 @@ layers:
   - .
   - F2
   - _
-  - {t: KEY, h: toggle}
+  - {t: Fkey, h: toggle}
   - '&MACRO_CAD_LISO'
   - '&MACRO_CAD_LON'
   - '&MACRO_CAD_COPY'
@@ -111,7 +111,7 @@ layers:
   - '3'
   - ','
   - \
-  - Fkey
+  - {t: Fkey, h: toggle}
   - '&MACRO_CAD_DSP'
   - LCTRL
   - SPACE
@@ -172,7 +172,7 @@ layers:
   - KP 3
   - '@'
   - ']'
-  - {t: \, type: held}
+  - \
   - '&macro_slide'
   - LCTRL
   - SPACE
