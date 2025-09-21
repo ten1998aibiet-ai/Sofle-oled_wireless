@@ -62,11 +62,11 @@ layers:
   - RALT
   - RGUI
   CAD:
-  - ESC
+  - TAB
   - '&MACRO_CAD_TAXY'
   - '&MACRO_CAD_ROTPC'
   - '&MACRO_CAD_FIND'
-  - '&MACRO_CAD_TAXY'
+  - '&macro_line'
   - '&MACRO_CAD_MIRRO'
   - KP NUMLOCK
   - /
@@ -74,7 +74,7 @@ layers:
   - '-'
   - '&MACRO_CTRL_1'
   - '&MACRO_CTRL_2'
-  - TAB
+  - CAPSLOCK
   - '&MACRO_CAD_XL_V'
   - '&MACRO_CAD_XL_H'
   - '&MACRO_CAD_E'
@@ -86,7 +86,7 @@ layers:
   - +
   - '&MACRO_CTRL_3'
   - '&MACRO_CTRL_7'
-  - CAPS
+  - {t: Fkey, h: toggle}
   - '&MACRO_CAD_AGN'
   - '&MACRO_CAD_MA'
   - '&MACRO_CAD_LEDER'
@@ -98,7 +98,7 @@ layers:
   - .
   - F2
   - _
-  - {t: Fkey, h: toggle}
+  - {t: KEY, h: toggle}
   - '&MACRO_CAD_LISO'
   - '&MACRO_CAD_LON'
   - '&MACRO_CAD_COPY'
@@ -113,8 +113,8 @@ layers:
   - \
   - Fkey
   - '&MACRO_CAD_DSP'
-  - SPACE
   - LCTRL
+  - SPACE
   - LSHIFT
   - ESC
   - SPACE
@@ -123,63 +123,63 @@ layers:
   - RCTRL
   - RIGHT SHIFT
   Fkey:
-  - F1
-  - F2
-  - F3
+  - ESC
   - F4
   - F5
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - F12
+  - '&macro_arrowmove'
+  - '&macro_symbolmove'
+  - '&macro_textmove'
+  - KP NUMLOCK
+  - /
+  - '*'
+  - '-'
+  - '&macro_modicolor'
+  - '&macro_linetype'
   - TAB
-  - A
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&macro_geocopy'
+  - '&macro_subcopy'
+  - '&macro_arrowmove'
+  - '&macro_symbolcopy'
+  - '&macro_textcopy'
+  - KP 7
+  - KP 8
+  - KP 9
+  - +
+  - ;
+  - ''''
   - CAPSLOCK
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&macro_delgeo'
+  - '&macro_delsub'
+  - '&macro_arrowam'
+  - '&macro_symbol'
+  - '&macro_textnew'
+  - KP 4
+  - KP 5
+  - KP 6
+  - '!'
+  - /
+  - '['
+  - {t: KEY, h: toggle}
+  - A
+  - '&macro_movedim'
+  - '&macro_aggle'
+  - '&macro_dimline2'
+  - ENTER
   - {t: KEY, h: toggle}
   - {t: CAD, h: toggle}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - KP 1
+  - KP 2
+  - KP 3
+  - '@'
+  - ']'
+  - {t: \, type: held}
+  - '&macro_slide'
+  - LCTRL
+  - SPACE
+  - LEFT SHIFT
+  - ESC
+  - BACKSPACE
+  - ENTER
+  - KP 0
+  - .
+  - ','
