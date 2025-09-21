@@ -418,7 +418,7 @@
             // |        |         |         |         |         |         | RGB_TOG | |      |      |      |       |      |       |       |
             //                    |         |         |         |         |         | |      |      |      |       |      |
 
-            label = "Fkey";
+            label = "marine";
             bindings = <
 &kp ESC       &kp F4          &kp F5          &macro_arrowmove  &macro_symbolmove  &macro_textmove                            &kp KP_NUMLOCK   &kp SLASH        &kp ASTERISK     &kp MINUS        &macro_modicolor   &macro_linetype
 &kp TAB       &macro_geocopy  &macro_subcopy  &macro_arrowmove  &macro_symbolcopy  &macro_textcopy                            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS         &kp SEMICOLON      &kp SQT
