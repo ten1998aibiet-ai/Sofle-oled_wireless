@@ -400,8 +400,8 @@
             bindings = <
 &kp TAB       &MACRO_CAD_TAXY  &MACRO_CAD_ROTPC  &MACRO_CAD_FIND   &macro_line      &MACRO_CAD_MIRRO                        &kp KP_NUMLOCK  &kp SLASH     &kp ASTERISK  &kp MINUS        &MACRO_CTRL_1  &MACRO_CTRL_2
 &kp CAPSLOCK  &MACRO_CAD_XL_V  &MACRO_CAD_XL_H   &MACRO_CAD_E      &MACRO_CAD_EX    &MACRO_CAD_TRIM                         &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9  &kp PLUS         &MACRO_CTRL_3  &MACRO_CTRL_7
-&to 2         &MACRO_CAD_AGN   &MACRO_CAD_MA     &MACRO_CAD_LEDER  &MACRO_CAD_DIMC  &MACRO_CAD_DIM                          &kp NUMBER_4    &kp NUMBER_5  &kp NUMBER_6  &kp DOT          &kp F2         &kp UNDER
-&to 0         &MACRO_CAD_LISO  &MACRO_CAD_LON    &MACRO_CAD_COPY   &MACRO_CAD_RO    &MACRO_CAD_M      &to 0      &to 2      &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp COMMA        &kp BSLH       &mo 2
+&to 0         &MACRO_CAD_AGN   &MACRO_CAD_MA     &MACRO_CAD_LEDER  &MACRO_CAD_DIMC  &MACRO_CAD_DIM                          &kp NUMBER_4    &kp NUMBER_5  &kp NUMBER_6  &kp DOT          &kp F2         &kp UNDER
+&to 2         &MACRO_CAD_LISO  &MACRO_CAD_LON    &MACRO_CAD_COPY   &MACRO_CAD_RO    &MACRO_CAD_M      &to 0      &to 2      &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp COMMA        &kp BSLH       &to 2
                                &MACRO_CAD_DSP    &kp LCTRL         &kp SPACE        &kp LSHIFT        &kp ESC    &kp SPACE  &kp ENTER       &kp NUMBER_0  &kp RCTRL     &kp RIGHT_SHIFT
             >;
 
