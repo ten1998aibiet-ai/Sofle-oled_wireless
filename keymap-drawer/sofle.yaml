@@ -44,13 +44,13 @@ layers:
   - V
   - B
   - {t: KEY, h: toggle}
-  - {t: Fkey, h: toggle}
+  - {t: marine, h: toggle}
   - N
   - M
   - ','
   - .
   - '-'
-  - {t: Fkey, h: toggle}
+  - {t: marine, h: toggle}
   - LGUI
   - LALT
   - LSHIFT
@@ -98,20 +98,20 @@ layers:
   - .
   - F2
   - _
-  - {t: Fkey, h: toggle}
+  - {t: marine, h: toggle}
   - '&MACRO_CAD_LISO'
   - '&MACRO_CAD_LON'
   - '&MACRO_CAD_COPY'
   - '&MACRO_CAD_RO'
   - '&MACRO_CAD_M'
   - {t: KEY, h: toggle}
-  - {t: Fkey, h: toggle}
+  - {t: marine, h: toggle}
   - '1'
   - '2'
   - '3'
   - ','
   - \
-  - {t: Fkey, h: toggle}
+  - {t: marine, h: toggle}
   - '&MACRO_CAD_DSP'
   - LCTRL
   - SPACE
@@ -122,7 +122,7 @@ layers:
   - '0'
   - RCTRL
   - RIGHT SHIFT
-  Fkey:
+  marine:
   - ESC
   - F4
   - F5
