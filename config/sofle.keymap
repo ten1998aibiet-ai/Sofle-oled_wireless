@@ -161,7 +161,7 @@
         MACRO_CAD_E: CAD_E_DELETE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp E &kp SPACE>;
+            bindings = <&kp E &kp C &kp SPACE>;
             label = "CAD_E_DELETE";
         };
 
@@ -353,6 +353,41 @@
             bindings = <&kp LEFT_ALT &kp M &kp I>;
             label = "MACRO_LINETYPE";
         };
+
+        macro_t3: macro_t3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp NUMBER_3 &kp SPACE>;
+            label = "MACRO_T3";
+        };
+
+        macro_t4: macro_t4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp NUMBER_4 &kp SPACE>;
+            label = "MACRO_T4";
+        };
+
+        macro_t2: macro_t2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp NUMBER_2 &kp SPACE>;
+            label = "MACRO_T2";
+        };
+
+        macro_t1: macro_t1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp NUMBER_1 &kp SPACE>;
+            label = "MACRO_T1";
+        };
+
+        macro_t5: macro_t5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp N5 &kp SPACE>;
+            label = "MACRO_T5";
+        };
     };
 
     keymap {
@@ -371,7 +406,7 @@
             bindings = <
 &kp ESC   &kp N1  &kp N2    &kp N3    &kp N4      &kp N5                             &kp N6     &kp N7           &kp N8     &kp N9    &kp N0     &kp BACKSPACE
 &kp TAB   &kp Q   &kp W     &kp E     &kp R       &kp T                              &kp Y      &kp U            &kp I      &kp O     &kp P      &kp CAPSLOCK
-&kp CAPS  &kp A   &kp S     &kp D     &kp F       &kp G                              &kp H      &kp J            &kp K      &kp L     &kp SEMI   &kp SQT
+&kp CAPS  &kp A   &kp S     &kp D     &kp F       &kp G                              &kp H      &kp J            &kp K      &kp L     &kp EQUAL  &kp SQT
 &to 1     &kp Z   &kp X     &kp C     &kp V       &kp B      &to 0        &to 2      &kp N      &kp M            &kp COMMA  &kp DOT   &kp MINUS  &to 2
                   &kp LGUI  &kp LALT  &kp LSHIFT  &kp LCTRL  &kp SPACE    &kp SPACE  &kp ENTER  &kp RIGHT_SHIFT  &kp RALT   &kp RGUI
             >;
@@ -391,11 +426,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&kp TAB       &MACRO_CAD_TAXY  &MACRO_CAD_ROTPC  &MACRO_CAD_FIND   &macro_line      &MACRO_CAD_MIRRO                        &kp KP_NUMLOCK  &kp SLASH     &kp ASTERISK  &kp MINUS        &MACRO_CTRL_1  &MACRO_CTRL_2
-&kp CAPSLOCK  &MACRO_CAD_XL_V  &MACRO_CAD_XL_H   &MACRO_CAD_E      &MACRO_CAD_EX    &MACRO_CAD_TRIM                         &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9  &kp PLUS         &MACRO_CTRL_3  &MACRO_CTRL_7
-&to 0         &MACRO_CAD_AGN   &MACRO_CAD_MA     &MACRO_CAD_LEDER  &MACRO_CAD_DIMC  &MACRO_CAD_DIM                          &kp NUMBER_4    &kp NUMBER_5  &kp NUMBER_6  &kp DOT          &kp F2         &kp UNDER
-&to 2         &MACRO_CAD_LISO  &MACRO_CAD_LON    &MACRO_CAD_COPY   &MACRO_CAD_RO    &MACRO_CAD_M      &to 0      &to 2      &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp COMMA        &kp BSLH       &to 2
-                               &MACRO_CAD_DSP    &kp LCTRL         &kp SPACE        &kp LSHIFT        &kp ESC    &kp SPACE  &kp ENTER       &kp NUMBER_0  &kp RCTRL     &kp RIGHT_SHIFT
+&kp TAB       &MACRO_CAD_TAXY  &MACRO_CAD_ROTPC  &macro_t4         &macro_t3        &macro_t2                              &kp KP_NUMLOCK   &kp SLASH        &kp ASTERISK     &kp MINUS        &MACRO_CTRL_1  &MACRO_CTRL_2
+&kp CAPSLOCK  &MACRO_CAD_XL_V  &MACRO_CAD_XL_H   &MACRO_CAD_E      &MACRO_CAD_EX    &MACRO_CAD_TRIM                        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS         &MACRO_CTRL_3  &MACRO_CTRL_7
+&macro_t5     &MACRO_CAD_AGN   &MACRO_CAD_MA     &MACRO_CAD_LEDER  &MACRO_CAD_DIMC  &MACRO_CAD_DIM                         &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp DOT          &kp F2         &kp UNDER
+&to 0         &MACRO_CAD_LISO  &MACRO_CAD_LON    &MACRO_CAD_COPY   &MACRO_CAD_RO    &MACRO_CAD_M     &to 0      &to 2      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp COMMA        &kp BSLH       &to 2
+                               &MACRO_CAD_DSP    &kp LCTRL         &kp SPACE        &kp LSHIFT       &kp ESC    &kp SPACE  &kp ENTER        &kp NUMBER_0     &kp RCTRL        &kp RIGHT_SHIFT
             >;
 
             sensor-bindings =
@@ -413,12 +448,14 @@
 
             label = "marine";
             bindings = <
-&kp ESC       &kp F4          &kp F5          &macro_arrowmove  &macro_symbolmove  &macro_textmove                            &kp KP_NUMLOCK   &kp SLASH        &kp ASTERISK     &kp MINUS        &macro_modicolor   &macro_linetype
-&kp TAB       &macro_geocopy  &macro_subcopy  &macro_arrowmove  &macro_symbolcopy  &macro_textcopy                            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS         &kp SEMICOLON      &kp SQT
+&kp ESC       &kp F4          &kp F5          &kp Z             &kp S              &kp D                                      &kp KP_NUMLOCK   &kp SLASH        &kp ASTERISK     &kp MINUS        &macro_modicolor   &macro_linetype
+&kp TAB       &macro_geocopy  &macro_subcopy  &macro_arrowmove  &macro_symbolmove  &macro_textmove                            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS         &kp SEMICOLON      &kp SQT
 &kp CAPSLOCK  &macro_delgeo   &macro_delsub   &macro_arrowam    &macro_symbol      &macro_textnew                             &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp EXCLAMATION  &kp SLASH          &kp LEFT_BRACKET
 &to 0         &kp A           &macro_movedim  &macro_aggle      &macro_dimline2    &kp ENTER        &to 0      &to 1          &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp AT_SIGN      &kp RIGHT_BRACKET  &kp NON_US_BACKSLASH
                               &macro_slide    &kp LCTRL         &kp SPACE          &kp LEFT_SHIFT   &kp ESC    &kp BACKSPACE  &kp ENTER        &kp KP_NUMBER_0  &kp DOT          &kp COMMA
             >;
+
+            sensor-bindings = <&inc_dec_kp KP_NUMBER_3 KP_NUMBER_1>;
         };
     };
 };
