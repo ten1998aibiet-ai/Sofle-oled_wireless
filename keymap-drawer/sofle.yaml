@@ -35,7 +35,7 @@ layers:
   - J
   - K
   - L
-  - ;
+  - '='
   - ''''
   - {t: CAD, h: toggle}
   - Z
@@ -65,9 +65,9 @@ layers:
   - TAB
   - '&MACRO_CAD_TAXY'
   - '&MACRO_CAD_ROTPC'
-  - '&MACRO_CAD_FIND'
-  - '&macro_line'
-  - '&MACRO_CAD_MIRRO'
+  - '&macro_t4'
+  - '&macro_t3'
+  - '&macro_t2'
   - KP NUMLOCK
   - /
   - '*'
@@ -80,25 +80,25 @@ layers:
   - '&MACRO_CAD_E'
   - '&MACRO_CAD_EX'
   - '&MACRO_CAD_TRIM'
-  - '7'
-  - '8'
-  - '9'
+  - KP 7
+  - KP 8
+  - KP 9
   - +
   - '&MACRO_CTRL_3'
   - '&MACRO_CTRL_7'
-  - {t: KEY, h: toggle}
+  - '&macro_t5'
   - '&MACRO_CAD_AGN'
   - '&MACRO_CAD_MA'
   - '&MACRO_CAD_LEDER'
   - '&MACRO_CAD_DIMC'
   - '&MACRO_CAD_DIM'
-  - '4'
-  - '5'
-  - '6'
+  - KP 4
+  - KP 5
+  - KP 6
   - .
   - F2
   - _
-  - {t: marine, h: toggle}
+  - {t: KEY, h: toggle}
   - '&MACRO_CAD_LISO'
   - '&MACRO_CAD_LON'
   - '&MACRO_CAD_COPY'
@@ -106,9 +106,9 @@ layers:
   - '&MACRO_CAD_M'
   - {t: KEY, h: toggle}
   - {t: marine, h: toggle}
-  - '1'
-  - '2'
-  - '3'
+  - KP 1
+  - KP 2
+  - KP 3
   - ','
   - \
   - {t: marine, h: toggle}
@@ -126,9 +126,9 @@ layers:
   - ESC
   - F4
   - F5
-  - '&macro_arrowmove'
-  - '&macro_symbolmove'
-  - '&macro_textmove'
+  - Z
+  - S
+  - D
   - KP NUMLOCK
   - /
   - '*'
@@ -139,8 +139,8 @@ layers:
   - '&macro_geocopy'
   - '&macro_subcopy'
   - '&macro_arrowmove'
-  - '&macro_symbolcopy'
-  - '&macro_textcopy'
+  - '&macro_symbolmove'
+  - '&macro_textmove'
   - KP 7
   - KP 8
   - KP 9
