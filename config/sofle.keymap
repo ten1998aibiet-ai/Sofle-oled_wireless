@@ -23,6 +23,7 @@
             #binding-cells = <0>;
             bindings = <&kp M &kp SPACE>;
             label = "CAD_MOVE";
+            tap-ms = <10>;
         };
 
         MACRO_CAD_RO: CAD_ROTATE {
@@ -30,6 +31,7 @@
             #binding-cells = <0>;
             bindings = <&kp R &kp O &kp SPACE>;
             label = "CAD_ROTATE";
+            tap-ms = <10>;
         };
 
         MACRO_CAD_DIM: CAD_DIM {
@@ -37,6 +39,7 @@
             #binding-cells = <0>;
             bindings = <&kp D &kp L &kp I &kp SPACE>;
             label = "CAD_DIM";
+            tap-ms = <10>;
         };
 
         MACRO_CAD_DIMC: CAD_DIMCONTINUE {
@@ -44,6 +47,7 @@
             #binding-cells = <0>;
             bindings = <&kp D &kp C &kp O &kp SPACE>;
             label = "CAD_DIMCONTINUE";
+            tap-ms = <10>;
         };
 
         MACRO_CAD_LEDER: CAD_QLEDER {
@@ -51,6 +55,7 @@
             #binding-cells = <0>;
             bindings = <&kp L &kp E &kp SPACE>;
             label = "CAD_QLEDER";
+            tap-ms = <10>;
         };
 
         MACRO_CAD_LISO: CAD_LAYISO {
@@ -58,6 +63,7 @@
             #binding-cells = <0>;
             bindings = <&kp L &kp A &kp Y &kp I &kp S &kp O &kp SPACE>;
             label = "CAD_LAYISO";
+            tap-ms = <10>;
         };
 
         MACRO_CAD_LON: CAD_LAYON {
@@ -65,6 +71,7 @@
             #binding-cells = <0>;
             bindings = <&kp L &kp A &kp Y &kp O &kp N &kp SPACE>;
             label = "CAD_LAYON";
+            tap-ms = <10>;
         };
 
         MACRO_CAD_XL_V: CAD_XLV {
@@ -72,6 +79,7 @@
             #binding-cells = <0>;
             bindings = <&kp X &kp L &kp SPACE &kp V &kp SPACE>;
             label = "CAD_XLV";
+            tap-ms = <10>;
         };
 
         MACRO_CAD_XL_H: CAD_XLH {
@@ -79,6 +87,7 @@
             #binding-cells = <0>;
             bindings = <&kp X &kp L &kp SPACE &kp H &kp SPACE>;
             label = "CAD_XLH";
+            tap-ms = <10>;
         };
 
         MACRO_CAD_AGN: CAD_ALIGN {
@@ -86,6 +95,7 @@
             #binding-cells = <0>;
             bindings = <&kp A &kp L &kp SPACE>;
             label = "CAD_ALIGN";
+            tap-ms = <10>;
         };
 
         MACRO_CAD_TRIM: CAD_TRIM {
@@ -93,6 +103,7 @@
             #binding-cells = <0>;
             bindings = <&kp T &kp R &kp SPACE>;
             label = "CAD_TRIM";
+            tap-ms = <10>;
         };
 
         MACRO_CAD_MA: CAD_MATCH {
@@ -100,6 +111,7 @@
             #binding-cells = <0>;
             bindings = <&kp M &kp A &kp SPACE>;
             label = "CAD_MATCH";
+            tap-ms = <10>;
         };
 
         MACRO_CAD_ROTPC: CAD_LISP_ROTPC {
@@ -107,6 +119,7 @@
             #binding-cells = <0>;
             bindings = <&kp R &kp O &kp T &kp P &kp C &kp SPACE>;
             label = "CAD_LISP_ROTPC";
+            tap-ms = <10>;
         };
 
         MACRO_CAD_FIND: CAD_LISP_STBS {
@@ -114,6 +127,7 @@
             #binding-cells = <0>;
             bindings = <&kp S &kp T &kp B &kp S &kp SPACE>;
             label = "CAD_LISP_STBS";
+            tap-ms = <10>;
         };
 
         MACRO_CAD_TAXY: CAD_LISP_TEXTALGINXY {
@@ -121,6 +135,7 @@
             #binding-cells = <0>;
             bindings = <&kp T &kp A &kp X &kp Y &kp SPACE>;
             label = "CAD_LISP_TEXTALGINXY";
+            tap-ms = <10>;
         };
 
         MACRO_CAD_TD50X: CAD_LISP_TEXTDIS50X {
@@ -128,6 +143,7 @@
             #binding-cells = <0>;
             bindings = <&kp T &kp D &kp NUMBER_5 &kp NUMBER_0 &kp X &kp SPACE>;
             label = "CAD_LISP_TEXTDIS50X";
+            tap-ms = <10>;
         };
 
         MACRO_CAD_TD50Y: CAD_LISP_TEXTDIS50Y {
@@ -135,6 +151,7 @@
             #binding-cells = <0>;
             bindings = <&kp T &kp D &kp NUMBER_5 &kp NUMBER_0 &kp Y &kp SPACE>;
             label = "CAD_LISP_TEXTDIS50Y";
+            tap-ms = <10>;
         };
 
         MACRO_CAD_COPY: CAD_COPY {
@@ -142,6 +159,7 @@
             #binding-cells = <0>;
             bindings = <&kp C &kp O &kp SPACE>;
             label = "CAD_COPY";
+            tap-ms = <10>;
         };
 
         MACRO_CAD_MIRRO: CAD_MIRRO {
@@ -149,6 +167,7 @@
             #binding-cells = <0>;
             bindings = <&kp M &kp I &kp SPACE>;
             label = "CAD_MIRRO";
+            tap-ms = <10>;
         };
 
         MACRO_CAD_UNDO: CAD_UNDO {
@@ -156,6 +175,7 @@
             #binding-cells = <0>;
             bindings = <&kp LCTRL &kp Z>;
             label = "CAD_UNDO";
+            tap-ms = <10>;
         };
 
         MACRO_CAD_E: CAD_E_DELETE {
@@ -163,13 +183,15 @@
             #binding-cells = <0>;
             bindings = <&kp E &kp W &kp SPACE>;
             label = "CAD_E_DELETE";
+            tap-ms = <10>;
         };
 
         MACRO_CAD_EX: CAD_EX {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp E &kp W &kp SPACE>;
+            bindings = <&kp E &kp X &kp SPACE>;
             label = "CAD_EX";
+            tap-ms = <10>;
         };
 
         MACRO_CAD_DSP: CAD_DIMSPA {
@@ -177,6 +199,7 @@
             #binding-cells = <0>;
             bindings = <&kp D &kp I &kp M &kp S &kp P &kp SPACE>;
             label = "CAD_DIMSPA";
+            tap-ms = <10>;
         };
 
         MACRO_CTRL_1: MACRO_CTRL_1 {
@@ -184,6 +207,7 @@
             #binding-cells = <0>;
             bindings = <&sk LCTRL &kp N1>;
             label = "MACRO_CTRL_1";
+            tap-ms = <10>;
         };
 
         MACRO_CTRL_2: MACRO_CTRL_2 {
@@ -191,6 +215,7 @@
             #binding-cells = <0>;
             bindings = <&sk LCTRL &kp N2>;
             label = "MACRO_CTRL_2";
+            tap-ms = <10>;
         };
 
         MACRO_CTRL_3: MACRO_CTRL_3 {
@@ -198,6 +223,7 @@
             #binding-cells = <0>;
             bindings = <&sk LCTRL &kp N3>;
             label = "MACRO_CTRL_3";
+            tap-ms = <10>;
         };
 
         MACRO_CTRL_7: MACRO_CTRL_7 {
@@ -205,6 +231,7 @@
             #binding-cells = <0>;
             bindings = <&sk LCTRL &kp N7>;
             label = "MACRO_CTRL_7";
+            tap-ms = <10>;
         };
 
         macro_line: macro_line {
@@ -212,6 +239,7 @@
             #binding-cells = <0>;
             bindings = <&kp L &kp SPACE>;
             label = "MACRO_LINE";
+            tap-ms = <10>;
         };
 
         macro_delsub: macro_delsub {
@@ -219,6 +247,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_ALT &kp E &kp D &kp S>;
             label = "MACRO_DELSUB";
+            tap-ms = <10>;
         };
 
         macro_delgeo: macro_delgeo {
@@ -226,6 +255,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_ALT &kp E &kp D &kp G>;
             label = "MACRO_DELGEO";
+            tap-ms = <10>;
         };
 
         macro_lineam: macro_lineam {
@@ -233,6 +263,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_ALT &kp I &kp L>;
             label = "MACRO_LINEAM";
+            tap-ms = <10>;
         };
 
         macro_cricle: macro_cricle {
@@ -240,6 +271,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_ALT &kp I &kp A>;
             label = "MACRO_CRICLE";
+            tap-ms = <10>;
         };
 
         macro_textnew: macro_textnew {
@@ -247,6 +279,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_ALT &kp I &kp T>;
             label = "MACRO_TEXTNEW";
+            tap-ms = <10>;
         };
 
         macro_symbol: macro_symbol {
@@ -254,6 +287,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_ALT &kp I &kp Y>;
             label = "MACRO_SYMBOL";
+            tap-ms = <10>;
         };
 
         macro_slide: macro_slide {
@@ -261,6 +295,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_ALT &kp T &kp I &kp S &kp SPACE>;
             label = "MACRO_SLIDE";
+            tap-ms = <10>;
         };
 
         macro_dimline2: macro_dimline2 {
@@ -268,6 +303,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_ALT &kp D &kp L>;
             label = "MACRO_DIMLINE2";
+            tap-ms = <10>;
         };
 
         macro_arrowam: macro_arrowam {
@@ -275,6 +311,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_ALT &kp A &kp N>;
             label = "MACRO_ARROWAM";
+            tap-ms = <10>;
         };
 
         macro_textmove: macro_textmove {
@@ -282,6 +319,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_ALT &kp M &kp M &kp I>;
             label = "MACRO_TEXTMOVE";
+            tap-ms = <10>;
         };
 
         macro_symbolmove: macro_symbolmove {
@@ -289,6 +327,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_ALT &kp M &kp M &kp Y>;
             label = "MACRO_SYMBOLMOVE";
+            tap-ms = <10>;
         };
 
         macro_arrowmove: macro_arrowmove {
@@ -296,6 +335,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_ALT &kp M &kp M &kp R>;
             label = "MACRO_ARROWMOVE";
+            tap-ms = <10>;
         };
 
         macro_aggle: macro_aggle {
@@ -303,6 +343,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_ALT &kp D &kp A>;
             label = "MACRO_AGGLE";
+            tap-ms = <10>;
         };
 
         macro_textcopy: macro_textcopy {
@@ -310,6 +351,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_ALT &kp M &kp C &kp T>;
             label = "MACRO_TEXTCOPY";
+            tap-ms = <10>;
         };
 
         macro_symbolcopy: macro_symbolcopy {
@@ -317,6 +359,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_ALT &kp M &kp C &kp Y>;
             label = "MACRO_SYMBOLCOPY";
+            tap-ms = <10>;
         };
 
         macro_geocopy: macro_geocopy {
@@ -324,6 +367,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_ALT &kp M &kp C &kp G>;
             label = "MACRO_GEOCOPY";
+            tap-ms = <10>;
         };
 
         macro_subcopy: macro_subcopy {
@@ -331,6 +375,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_ALT &kp M &kp C &kp U>;
             label = "MACRO_SUBCOPY";
+            tap-ms = <10>;
         };
 
         macro_movedim: macro_movedim {
@@ -338,6 +383,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_ALT &kp M &kp D>;
             label = "MACRO_MOVEDIM";
+            tap-ms = <10>;
         };
 
         macro_modicolor: macro_modicolor {
@@ -345,6 +391,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_ALT &kp M &kp O>;
             label = "MACRO_MODICOLOR";
+            tap-ms = <10>;
         };
 
         macro_linetype: macro_linetype {
@@ -352,6 +399,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_ALT &kp M &kp I>;
             label = "MACRO_LINETYPE";
+            tap-ms = <10>;
         };
 
         macro_t3: macro_t3 {
@@ -359,6 +407,7 @@
             #binding-cells = <0>;
             bindings = <&kp T &kp NUMBER_3 &kp SPACE>;
             label = "MACRO_T3";
+            tap-ms = <10>;
         };
 
         macro_t4: macro_t4 {
@@ -366,6 +415,7 @@
             #binding-cells = <0>;
             bindings = <&kp T &kp NUMBER_4 &kp SPACE>;
             label = "MACRO_T4";
+            tap-ms = <10>;
         };
 
         macro_t2: macro_t2 {
@@ -373,6 +423,7 @@
             #binding-cells = <0>;
             bindings = <&kp T &kp NUMBER_2 &kp SPACE>;
             label = "MACRO_T2";
+            tap-ms = <10>;
         };
 
         macro_t1: macro_t1 {
@@ -380,6 +431,7 @@
             #binding-cells = <0>;
             bindings = <&kp T &kp NUMBER_1 &kp SPACE>;
             label = "MACRO_T1";
+            tap-ms = <10>;
         };
 
         macro_t5: macro_t5 {
@@ -387,6 +439,7 @@
             #binding-cells = <0>;
             bindings = <&kp T &kp N5 &kp SPACE>;
             label = "MACRO_T5";
+            tap-ms = <10>;
         };
     };
 
