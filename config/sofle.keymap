@@ -181,7 +181,7 @@
         MACRO_CAD_E: CAD_E_DELETE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp E &kp W &kp SPACE>;
+            bindings = <&kp E &kp SPACE>;
             label = "CAD_E_DELETE";
             tap-ms = <10>;
         };
