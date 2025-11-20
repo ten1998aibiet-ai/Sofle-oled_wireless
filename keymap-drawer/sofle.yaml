@@ -64,7 +64,7 @@ layers:
   CAD:
   - TAB
   - '&MACRO_CAD_TAXY'
-  - '&MACRO_CAD_ROTPC'
+  - '&macro_t1'
   - '&macro_t4'
   - '&macro_t3'
   - '&macro_t2'
@@ -95,7 +95,7 @@ layers:
   - KP 4
   - KP 5
   - KP 6
-  - .
+  - ;
   - F2
   - _
   - {t: KEY, h: toggle}
@@ -109,7 +109,7 @@ layers:
   - KP 1
   - KP 2
   - KP 3
-  - ','
+  - /
   - \
   - {t: marine, h: toggle}
   - '&MACRO_CAD_DSP'
@@ -120,8 +120,8 @@ layers:
   - SPACE
   - ENTER
   - '0'
-  - RCTRL
-  - RIGHT SHIFT
+  - .
+  - ','
   marine:
   - ESC
   - F4
