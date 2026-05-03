@@ -1,187 +1,185 @@
 layout: {zmk_keyboard: sofle}
 layers:
-  default: [ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', +, CAPSLOCK, Q, W, E, R, T, Y, U, I, O, P, _, TAB, A, S, D, F, G, H, J, K, L, ;, '''', LEFT GUI,
-    Z, X, C, V, B, MUTE, '', N, M, ',', ., /, RSHFT, LEFT SHIFT, LALT, LCTRL, lower, SPACE, ENTER, raise, BACKSPACE, DELETE, '?']
-  lower:
+  KEY:
   - ESC
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - BACKSPACE
+  - TAB
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - CAPSLOCK
+  - CAPS
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - '-'
   - '='
-  - F1
+  - {t: CAD, h: toggle}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - {t: KEY, h: toggle}
+  - {t: marine, h: toggle}
+  - N
+  - M
+  - ;
+  - ''''
+  - /
+  - {t: marine, h: toggle}
+  - LGUI
+  - LALT
+  - LSHIFT
+  - LCTRL
+  - SPACE
+  - SPACE
+  - ENTER
+  - RIGHT SHIFT
+  - ','
+  - .
+  CAD:
+  - BACKSPACE
+  - '&MACRO_CAD_TAXY'
+  - '&macro_t1'
+  - '&macro_t4'
+  - '&macro_t3'
+  - '&macro_t2'
+  - KP NUMLOCK
+  - /
+  - '*'
+  - '-'
+  - '&MACRO_CTRL_1'
+  - '&MACRO_CTRL_2'
+  - TAB
+  - '&MACRO_CAD_XL_V'
+  - '&MACRO_CAD_XL_H'
+  - '&MACRO_CAD_E'
+  - '&MACRO_CAD_EX'
+  - '&MACRO_CAD_TRIM'
+  - KP 7
+  - KP 8
+  - KP 9
+  - +
+  - '&MACRO_CTRL_3'
+  - '&MACRO_CTRL_7'
+  - '&macro_t5'
+  - '&macro_St'
+  - '&MACRO_CAD_MA'
+  - '&MACRO_CAD_LEDER'
+  - '&MACRO_CAD_DIMC'
+  - '&MACRO_CAD_DIM'
+  - KP 4
+  - KP 5
+  - KP 6
+  - ;
   - F2
-  - F3
+  - _
+  - {t: KEY, h: toggle}
+  - '&MACRO_CAD_LISO'
+  - '&MACRO_CAD_LON'
+  - '&MACRO_CAD_COPY'
+  - '&MACRO_CAD_RO'
+  - '&MACRO_CAD_M'
+  - {t: KEY, h: toggle}
+  - {t: marine, h: toggle}
+  - KP 1
+  - KP 2
+  - KP 3
+  - /
+  - \
+  - {t: marine, h: toggle}
+  - '&MACRO_CAD_DSP'
+  - SPACE
+  - LCTRL
+  - LSHIFT
+  - ESC
+  - ENTER
+  - SPACE
+  - '0'
+  - .
+  - ','
+  marine:
+  - BACKSPACE
   - F4
   - F5
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - F12
-  - TAB
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - KP MULTIPLY
-  - (
-  - )
-  - '|'
-  - {t: ▽, type: trans}
-  - '='
+  - Z
+  - S
+  - D
+  - KP NUMLOCK
+  - /
+  - '*'
   - '-'
-  - KP PLUS
-  - '{'
-  - '}'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '['
-  - ']'
+  - '&macro_modicolor'
+  - '&macro_linetype'
+  - TAB
+  - '&macro_geocopy'
+  - '&macro_subcopy'
+  - '&macro_arrowmove'
+  - '&macro_symbolmove'
+  - '&macro_textmove'
+  - KP 7
+  - KP 8
+  - KP 9
+  - +
   - ;
-  - ':'
+  - ''''
+  - CAPSLOCK
+  - '&macro_delgeo'
+  - '&macro_delsub'
+  - '&macro_arrowam'
+  - '&macro_symbol'
+  - '&macro_textnew'
+  - KP 4
+  - KP 5
+  - KP 6
+  - '!'
+  - /
+  - '['
+  - {t: KEY, h: toggle}
+  - A
+  - '&macro_movedim'
+  - '&macro_aggle'
+  - '&macro_dimline2'
+  - ENTER
+  - {t: KEY, h: toggle}
+  - {t: CAD, h: toggle}
+  - KP 1
+  - KP 2
+  - KP 3
+  - '@'
+  - ']'
   - \
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  raise:
-  - BT CLR
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - INS
-  - PSCRN
-  - CMENU
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - PG UP
-  - {t: ▽, type: trans}
-  - UP
-  - {t: ▽, type: trans}
-  - '0'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LALT
+  - '&macro_slide'
   - LCTRL
-  - LSHFT
-  - {t: ▽, type: trans}
-  - CLCK
-  - PG DN
-  - LEFT
-  - DOWN
-  - RIGHT
-  - DEL
-  - BSPC
-  - {t: ▽, type: trans}
-  - UNDO
-  - CUT
-  - COPY
-  - PASTE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  adjust:
-  - BT CLR
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
-  - W
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - EP TOG
-  - RGB HUD
-  - RGB HUI
-  - RGB SAD
-  - RGB SAI
-  - RGB EFF
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - RGB BRD
-  - RGB BRI
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - RGB TOG
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {type: held}
-  - ''
-  - ''
-  - {type: held}
-  - ''
-  - ''
-  - ''
+  - SPACE
+  - LEFT SHIFT
+  - ESC
+  - BACKSPACE
+  - ENTER
+  - KP 0
+  - .
+  - ','
