@@ -442,7 +442,7 @@
             tap-ms = <1>;
         };
 
-        macro_S: macro_STR {
+        macro_St: macro_STR {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp S &kp SPACE>;
@@ -488,7 +488,7 @@
             bindings = <
 &kp BACKSPACE  &MACRO_CAD_TAXY  &macro_t1        &macro_t4         &macro_t3        &macro_t2                              &kp KP_NUMLOCK   &kp SLASH        &kp ASTERISK     &kp MINUS      &MACRO_CTRL_1  &MACRO_CTRL_2
 &kp TAB        &MACRO_CAD_XL_V  &MACRO_CAD_XL_H  &MACRO_CAD_E      &MACRO_CAD_EX    &MACRO_CAD_TRIM                        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS       &MACRO_CTRL_3  &MACRO_CTRL_7
-&macro_t5      &macro_S         &MACRO_CAD_MA    &MACRO_CAD_LEDER  &MACRO_CAD_DIMC  &MACRO_CAD_DIM                         &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp SEMICOLON  &kp F2         &kp UNDER
+&macro_t5      &macro_St        &MACRO_CAD_MA    &MACRO_CAD_LEDER  &MACRO_CAD_DIMC  &MACRO_CAD_DIM                         &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp SEMICOLON  &kp F2         &kp UNDER
 &to 0          &MACRO_CAD_LISO  &MACRO_CAD_LON   &MACRO_CAD_COPY   &MACRO_CAD_RO    &MACRO_CAD_M     &to 0      &to 2      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp SLASH      &kp BSLH       &to 2
                                 &MACRO_CAD_DSP   &kp SPACE         &kp LCTRL        &kp LSHIFT       &kp ESC    &kp ENTER  &kp SPACE        &kp NUMBER_0     &kp DOT          &kp COMMA
             >;
